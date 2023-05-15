@@ -50,3 +50,17 @@ button{
 button:hover {
     background-color: #27ae60;
 }
+
+.contacts {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.item {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
