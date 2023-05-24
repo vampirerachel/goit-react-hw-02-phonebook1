@@ -1,22 +1,15 @@
 import styles from "./style.module.css";
+import App from "../App.jsx";
 import React, { useState, useRef } from "react";
 import { useId } from 'react';
 
+
 export default function Phonebook() {
     const id = useId();
-    const nameRef = useRef();
-    const phoneRef = useRef();
+const nameRef = useRef();
+const phoneRef = useRef();
     const [contacts, setContacts] = useState([]);
-
-    function handleChange(event) {
-        event.preventDefault();
-        let name = nameRef.current.value;
-        let number = phoneRef.current.value;
-        setContacts(prev => [...prev, { name, number }]);
-        nameRef.current.value = "";
-        phoneRef.current.value = "";
-    }
-
+    
     return (
         <div>
             <h1>Phonebook</h1>
@@ -58,6 +51,7 @@ export default function Phonebook() {
         </div>
     );
 }
+
 
 
 
