@@ -1,9 +1,17 @@
-import Feedback from "./Feedback/index.jsx";
+import { useState } from "react";
+import ContactList from "./ContactList"
+import NameForm from "./NameForm";
 
-export const App = () => {
+export default const App = () => {
+  const [contacts, setContacts] = useState([]);
+
   return (
     <div>
-    <Feedback></Feedback>
+      <h2>
+        Phonebook
+      </h2>
+      <NameForm setContacts={setContacts} contacts={contacts} />
+      <ContactList contacts={contacts} />
     </div>
-  );
-};
+  )
+}
