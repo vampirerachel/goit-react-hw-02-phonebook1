@@ -2,8 +2,8 @@ import { useState } from "react";
 import { nanoid } from "nanoid";
 
 export default function NameForm({ contacts, setContacts }) {
-    const [ name, setName ] = useState{ ""};
-    const [number, setNumber] = useState{ ""};
+    const [name, setName] = useState("");
+    const [number, setNumber] = useState("");
 
     const onChange = event => {
         const { name, value } = event.target;

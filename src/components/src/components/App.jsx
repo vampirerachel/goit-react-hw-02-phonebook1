@@ -1,14 +1,14 @@
 import { useState } from "react";
-import ContactList from "./ContactList"
-import NameForm from "./NameForm";
+import ContactList from "./ContactList.jsx"
+import NameForm from "./NameForm.jsx";
 
-export default const App = () => {
+export const App = () => {
   const [contacts, setContacts] = useState([]);
 
   return (
     <div>
       <h2>
-        Phonebook
+      Phonebook
       </h2>
       <NameForm setContacts={setContacts} contacts={contacts} />
       <ContactList contacts={contacts} />
