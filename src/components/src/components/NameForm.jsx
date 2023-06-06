@@ -43,27 +43,27 @@ export default function NameForm({ contacts, setContacts }) {
             <p>Name</p>
             <form onSubmit={handleSubmit}>
                 <div className="{styles.inputContainer}">
-                    <input>
+                    <input
                 type="text"
                 name="name"
-                pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                pattern="^[a-zA-Z0-9\s'-]+$"
                 title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan."
                 required
                 value={name}
                 onChange={onChange}
-                </input>
+                />
             </div>
                 <div className="{styles.inputContainer}">
                     <p>Number</p>
-                    <input>
-type="text"
-name="name"
-pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan."
-                        required
-                        value={number}
-                        onChange={onChange}
-                    </input>
+                    <input
+                    type="text"
+                    name="number"
+                    pattern="^[a-zA-Z0-9\s'-]+$"
+                    title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan."
+                    required
+                    value={number}
+                    onChange={onChange}
+                    />
                     
                 </div>
                 <button type="submit">Add contact</button>
